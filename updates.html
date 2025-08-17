@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Updates | WeebWorld</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-900 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-zinc-800 p-4 shadow-md flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-400">WeebWorld</h1>
+      <ul class="flex gap-6">
+        <li><a href="index.html" class="hover:text-blue-300">Home</a></li>
+        <li>
+          <a href="updates.html" class="text-blue-300 font-semibold">Updates</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Heading -->
+    <header class="text-center py-12">
+      <h2 class="text-4xl font-bold text-blue-300">📅 Anime Airing Schedule</h2>
+      <p class="text-zinc-400 mt-2">
+        Stay updated on your favorite shows airing this week!
+      </p>
+    </header>
+    <!-- Search Box -->
+    <div class="flex justify-center mt-6">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Search anime..."
+        class="bg-zinc-800 text-white px-4 py-2 rounded-l-lg border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400 w-64"
+      />
+      <button
+        id="search-button"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-r-lg"
+      >
+        Search
+      </button>
+    </div>
+    <!-- Enhanced Filter Section -->
+    <div class="max-w-6xl mx-auto mt-8 px-6">
+      <div class="bg-zinc-800 rounded-xl p-6 shadow-lg">
+        <h3 class="text-xl font-bold text-blue-400 mb-4 text-center">
+          🎌 Filter & Sort Options 🎌
+        </h3>
+
+        <!-- Filter Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+          <!-- Genre Filter -->
+          <div>
+            <label
+              for="genre-select"
+              class="block text-sm font-medium text-zinc-300 mb-2"
+              >Genre</label
+            >
+            <select
+              id="genre-select"
+              class="w-full bg-zinc-900 text-white p-2 rounded-md border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <option value="all">All Genres</option>
+              <option value="1">Action</option>
+              <option value="2">Adventure</option>
+              <option value="4">Comedy</option>
+              <option value="8">Drama</option>
+              <option value="10">Fantasy</option>
+              <option value="14">Horror</option>
+              <option value="22">Romance</option>
+              <option value="24">Sci-Fi</option>
+              <option value="30">Sports</option>
+              <option value="37">Supernatural</option>
+              <option value="36">Slice of Life</option>
+            </select>
+          </div>
+
+          <!-- Status Filter -->
+          <div>
+            <label
+              for="status-select"
+              class="block text-sm font-medium text-zinc-300 mb-2"
+              >Status</label
+            >
+            <select
+              id="status-select"
+              class="w-full bg-zinc-900 text-white p-2 rounded-md border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <option value="">All Status</option>
+              <option value="airing">Currently Airing</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+
+          <!-- Season Filter -->
+          <div>
+            <label
+              for="season-select"
+              class="block text-sm font-medium text-zinc-300 mb-2"
+              >Season</label
+            >
+            <select
+              id="season-select"
+              class="w-full bg-zinc-900 text-white p-2 rounded-md border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <option value="">All Seasons</option>
+              <option value="winter">Winter</option>
+              <option value="spring">Spring</option>
+              <option value="summer">Summer</option>
+              <option value="fall">Fall</option>
+            </select>
+          </div>
+
+          <!-- Year Filter -->
+          <div>
+            <label
+              for="year-select"
+              class="block text-sm font-medium text-zinc-300 mb-2"
+              >Year</label
+            >
+            <select
+              id="year-select"
+              class="w-full bg-zinc-900 text-white p-2 rounded-md border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <option value="">All Years</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Sort Options -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label
+              for="sort-select"
+              class="block text-sm font-medium text-zinc-300 mb-2"
+              >Sort By</label
+            >
+            <select
+              id="sort-select"
+              class="w-full bg-zinc-900 text-white p-2 rounded-md border border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            >
+              <option value="default">Default</option>
+              <option value="title">Title (A-Z)</option>
+              <option value="score">Score (High to Low)</option>
+              <option value="episodes">Episodes</option>
+              <option value="year">Year (Newest First)</option>
+            </select>
+          </div>
+
+          <!-- Clear Filters Button -->
+          <div class="flex items-end">
+            <button
+              id="clear-filters"
+              class="w-full bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Info -->
+        <div id="results-info" class="text-center text-zinc-400 text-sm mt-4">
+          Loading anime...
+        </div>
+      </div>
+    </div>
+    <!-- Anime Cards -->
+    <div
+      id="anime-cards"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 px-6"
+    >
+    <!-- Loading Spinner -->
+<div id="loading-spinner" class="flex justify-center items-center py-20 hidden">
+  <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-400"></div>
+</div>
+
+<!-- No Results Message -->
+<div id="no-results" class="text-center py-20 hidden">
+  <div class="text-6xl mb-4">😢</div>
+  <h3 class="text-2xl font-bold text-zinc-300 mb-2">No Anime Found</h3>
+  <p class="text-zinc-400 mb-4">Try adjusting your filters or search terms</p>
+  <button id="clear-search" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors">
+    Clear Filters
+  </button>
+</div>
+
+<!-- Recently Viewed Section (add this before the footer) -->
+<div id="recently-viewed-section" class="max-w-6xl mx-auto mt-12 px-6 hidden">
+  <h3 class="text-2xl font-bold text-blue-400 mb-4">👁️ Recently Viewed</h3>
+  <div id="recently-viewed" class="flex gap-4 overflow-x-auto pb-4">
+    <!-- Recently viewed anime will be inserted here -->
+  </div>
+</div>
+
+<!-- Favorites Section -->
+<div id="favorites-section" class="max-w-6xl mx-auto mt-8 px-6 hidden">
+  <h3 class="text-2xl font-bold text-pink-400 mb-4">❤️ Your Favorites</h3>
+  <div id="favorites" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <!-- Favorite anime will be inserted here -->
+  </div>
+</div>
+      <!-- Cards will be injected here -->
+    </div>
+    <div
+      id="pagination"
+      class="flex justify-center items-center mt-10 gap-4 text-sm font-medium"
+    >
+      <!-- Pagination buttons will be injected here -->
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-zinc-500 py-6 border-t border-zinc-700 mt-10"
+    >
+      Made for weebs with ❤️
+    </footer>
+    <!-- Enhanced Anime Info Modal -->
+    <div
+      id="anime-modal"
+      class="fixed inset-0 bg-black bg-opacity-60 hidden justify-center items-center z-50"
+    >
+      <div
+        class="bg-zinc-900 p-6 rounded-xl w-11/12 max-w-4xl shadow-lg relative max-h-[90vh] overflow-y-auto"
+      >
+        <button
+          id="close-modal"
+          class="absolute top-4 right-4 text-white text-2xl hover:text-red-400 z-10"
+        >
+          &times;
+        </button>
+
+        <!-- Modal Content -->
+        <div class="flex flex-col lg:flex-row gap-6">
+          <!-- Left side - Image and basic info -->
+          <div class="lg:w-1/3">
+            <img
+              id="modal-image"
+              class="w-full rounded-lg mb-4"
+              src=""
+              alt="Anime Image"
+            />
+            <div class="bg-zinc-800 p-4 rounded-lg">
+              <h3 class="text-lg font-semibold text-blue-400 mb-2">
+                Quick Info
+              </h3>
+              <div class="space-y-2 text-sm">
+                <p>
+                  <span class="text-zinc-400">Episodes:</span>
+                  <span id="modal-episodes" class="text-white"></span>
+                </p>
+                <p>
+                  <span class="text-zinc-400">Score:</span>
+                  <span id="modal-score" class="text-white"></span>
+                </p>
+                <p>
+                  <span class="text-zinc-400">Status:</span>
+                  <span id="modal-status" class="text-white"></span>
+                </p>
+                <p>
+                  <span class="text-zinc-400">Aired:</span>
+                  <span id="modal-aired" class="text-white"></span>
+                </p>
+                <p>
+                  <span class="text-zinc-400">Duration:</span>
+                  <span id="modal-duration" class="text-white"></span>
+                </p>
+                <p>
+                  <span class="text-zinc-400">Rating:</span>
+                  <span id="modal-rating" class="text-white"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side - Detailed info -->
+          <div class="lg:w-2/3">
+            <h2
+              id="modal-title"
+              class="text-3xl font-bold mb-2 text-blue-300"
+            ></h2>
+            <p id="modal-title-english" class="text-lg text-zinc-400 mb-4"></p>
+
+            <!-- Genres -->
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold text-blue-400 mb-2">Genres</h3>
+              <div id="modal-genres" class="flex flex-wrap gap-2"></div>
+            </div>
+
+            <!-- Synopsis -->
+            <div class="mb-4">
+              <h3 class="text-lg font-semibold text-blue-400 mb-2">Synopsis</h3>
+              <p id="modal-synopsis" class="text-zinc-300 leading-relaxed"></p>
+            </div>
+
+            <!-- Studios and Producers -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400 mb-2">
+                  Studios
+                </h3>
+                <div id="modal-studios" class="text-sm text-zinc-300"></div>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-blue-400 mb-2">
+                  Producers
+                </h3>
+                <div id="modal-producers" class="text-sm text-zinc-300"></div>
+              </div>
+            </div>
+
+            <!-- External Links -->
+            <div class="flex gap-4 mt-6">
+              <a
+                id="modal-mal-link"
+                href="#"
+                target="_blank"
+                class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-white text-sm transition-colors"
+              >
+                View on MyAnimeList
+              </a>
+              <a
+                id="modal-trailer-link"
+                href="#"
+                target="_blank"
+                class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-white text-sm transition-colors hidden"
+              >
+                Watch Trailer
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes modalOpen {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .animate-modalOpen {
+        animation: modalOpen 0.3s ease-out;
+      }
+    </style>
+    <!-- Script -->
+    <script src="anime.js"></script>
+  </body>
+</html>
