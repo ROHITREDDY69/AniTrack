@@ -1,3 +1,8 @@
+
+<p align="center">
+<img src="https://radare.arzfun.com/api/tg/photo?id=AgACAgQAAxkBAAEGdtNotDWL41PX7SYOSPCY2pQ8yA0QIwACAskxG8DqUVAmTNU63KJ_VwEAAwIAA3kAAzYE">
+</p>
+
 # 🎬 Anime Updates Website
 
 A simple and clean website to track the **latest anime episode & movie releases**.  
