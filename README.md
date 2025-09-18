@@ -39,11 +39,11 @@ Built with **HTML, Tailwind CSS, and JavaScript**, and deployed using **Vercel**
     ─「 ᴄʀᴇᴅɪᴛs 」─
 </h3>
 
-- <b>[sᴀʜɪʟ](https://github.com/Sahil0976/)  ➻  [ʙᴀsᴇ ᴄᴏᴅᴇ](https://github.com/Sahil0976/Links-Sharing) </b>
-- <b>[ᴏʙɪᴛᴏ](https://github.com/proobito)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://github.com/ProYato/LinkShareBot) </b>
-- <b>[ʏᴀᴛᴏ](https://github.com/proyato)  ➻  [ᴀᴅᴅᴇᴅ ғᴇᴀᴛᴜʀᴇs](https://github.com/proyato) </b>
+- <b>[ROHIT](https://github.com/ROHITREDDY69)  ➻  [AniTrack](https://github.com/AniTrack) </b>
+- <b>[ROHIT](https://github.com/ROHITREDDY69)  ➻  [sᴏᴍᴇᴛʜɪɴɢ](https://github.com/AniTrack) </b>
+- <b>[ROHIT](https://github.com/ROHITREDDY69)  ➻  [ᴀᴅᴅᴇᴅ ғᴇᴀᴛᴜʀᴇs](https://github.com/ROHITREDDY69) </b>
 
  
-<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://github.com/Codeflix-Bots/linksharebot/graphs/contributors) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ ᴀᴜᴛᴏ ʀᴇɴᴀᴍᴇ ᴜsᴇғᴜʟ & ᴩᴏᴡᴇʀғᴜʟ 🖤 </b>
+<b>ᴀɴᴅ ᴀʟʟ [ᴛʜᴇ ᴄᴏɴᴛʀɪʙᴜᴛᴏʀs](https://github.com/AniTrack) ᴡʜᴏ ʜᴇʟᴩᴇᴅ ɪɴ ᴍᴀᴋɪɴɢ AniTrack ᴜsᴇғᴜʟ & ᴩᴏᴡᴇʀғᴜʟ 🖤 </b>
 
 
