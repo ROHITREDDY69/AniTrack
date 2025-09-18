@@ -5,7 +5,7 @@ Built with **HTML, Tailwind CSS, and JavaScript**, and deployed using **Vercel**
 
 ---
 
-## ✨ Features
+### ✨ Features
 - 📅 Displays the latest anime episode & movie releases.  
 - 🎨 Modern UI with Tailwind CSS.  
 - 🔍 Easy navigation with a responsive design.  
