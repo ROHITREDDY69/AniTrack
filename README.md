@@ -21,7 +21,7 @@ Built with **HTML, Tailwind CSS, and JavaScript**, and deployed using **Vercel**
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, Tailwind CSS, JavaScript  
-- **Deployment:** Vercel  
+- **Deployment:** GitHub  
 - **Version Control:** Git & GitHub  
 
 ---
