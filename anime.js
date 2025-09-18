@@ -1,4 +1,4 @@
-// === Enhanced anime.js (drop-in) ===
+// === Enhanced anime.js (drop-in) ====
 const apiUrl = "https://api.jikan.moe/v4/seasons/now";
 const CACHE_KEY = "jikan_season_now_cache_v1";
 const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
@@ -528,3 +528,4 @@ document.addEventListener("keydown", (e) => {
 // Initialize
 loadFilters();
 fetchAnime();
+
